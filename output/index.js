@@ -1,9 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSyncQueueProvider = void 0;
+exports.getSyncQueueProvider = exports.SyncQueueProvider = void 0;
 exports.default = createPlugin;
 require("reflect-metadata");
 const provider_1 = require("./provider");
+var provider_2 = require("./provider");
+Object.defineProperty(exports, "SyncQueueProvider", { enumerable: true, get: function () { return provider_2.SyncQueueProvider; } });
 class App {
     name = 'syncqueue';
     context;
