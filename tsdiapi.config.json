@@ -1,0 +1,4 @@
+{
+  "name": "tsdiapi-syncqueue",
+  "description": "A TSDIAPI plugin to extend API functionality with syncqueue."
+}
