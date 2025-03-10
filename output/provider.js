@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SyncQueueProvider = void 0;
-class SyncQueueProvider {
+export class SyncQueueProvider {
     static tasks = new Set();
     static isResolving = false;
     /**
@@ -48,5 +45,4 @@ class SyncQueueProvider {
         this.tasks.clear();
     }
 }
-exports.SyncQueueProvider = SyncQueueProvider;
 //# sourceMappingURL=provider.js.map
