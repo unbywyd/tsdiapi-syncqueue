@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import type { AppContext, AppPlugin } from "@tsdiapi/server";
-import { SyncQueueProvider } from "./provider";
-export { SyncQueueProvider } from "./provider";
+import { SyncQueueProvider } from "./provider.js";
+export { SyncQueueProvider } from "./provider.js";
 
 class App implements AppPlugin {
     name = 'syncqueue';
