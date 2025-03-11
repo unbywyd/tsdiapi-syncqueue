@@ -1,12 +1,17 @@
 {
   "name": "@tsdiapi/syncqueue",
   "description": "A core plugin for TSDIAPI that ensures all asynchronous tasks are completed before the server starts.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "output/index.js",
   "types": "output/index.d.ts",
   "type": "module",
+  "module": "./output/index.js",
+  "exports": {
+    "import": "./output/index.js",
+    "require": "./output/cjs/index.cjs"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc & tsup"
   },
   "author": "unbywyd",
   "engines": {
@@ -34,6 +39,7 @@
   ],
   "devDependencies": {
     "@types/node": "^22.13.8",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
