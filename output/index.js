@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { SyncQueueProvider } from "./provider.js";
 export { SyncQueueProvider } from "./provider.js";
 class App {
