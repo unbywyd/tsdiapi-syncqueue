@@ -28,7 +28,6 @@ export class SyncQueueProvider {
             if (this.tasks.size === 0) {
                 return;
             }
-
             if (timeoutMs) {
                 // Apply timeout
                 await Promise.race([
